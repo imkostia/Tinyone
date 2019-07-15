@@ -1,0 +1,68 @@
+.logo-icon {
+    background-image: url(../img/fingerprint.png);
+    width: 43px;
+    height: 43px;
+}
+.header { 
+    background-color: #fcdb00;
+    height: 100vh;
+    &-platforms{
+        @include flex-view(flex, flex-start, center);
+        @include list-style();
+        &__item {
+            width: 33px;
+            height: 40px;
+            margin-left: 38px;
+            margin-top: 40px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .apple {
+        background-image: url(../img/platforms/icon-fa-apple.png);
+    }
+    .android {
+        background-image: url(../img/platforms/icon-fa-android.png);
+    }
+    .windows {
+        background-image: url(../img/platforms/icon-fa-windows.png);
+    }
+}
+
+.container {
+    padding-top: 61px;
+}
+.navbar {
+    .navbar-logo {
+        @include flex-view(flex, flex-start, center);
+        &__name {
+            font-family: "PT Sans";
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 43px;
+            margin-left: 10px;
+            color: #010101;
+        }
+    }
+    .navbar-navigation {
+        @include flex-view(flex, center, center);
+        @include list-style();
+        text-decoration: none;
+        &__item {
+            margin-left: 72px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            font-size: 22px;
+            color: #010101;
+            font-weight: 700;
+        }
+    }
+}
+.content {
+    padding-top: 161px;
+}

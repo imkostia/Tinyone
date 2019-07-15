@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.logo-icon {
+  background-image: url(../img/fingerprint.png);
+  width: 43px;
+  height: 43px;
+}
+
+.header {
+  background-color: #fcdb00;
+  height: 100vh;
+}
+
+.header-platforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-platforms__item {
+  width: 33px;
+  height: 40px;
+  margin-left: 38px;
+  margin-top: 40px;
+}
+
+.header-platforms__item:first-child {
+  margin-left: 0;
+}
+
+.header .apple {
+  background-image: url(../img/platforms/icon-fa-apple.png);
+}
+
+.header .android {
+  background-image: url(../img/platforms/icon-fa-android.png);
+}
+
+.header .windows {
+  background-image: url(../img/platforms/icon-fa-windows.png);
+}
+
+.container {
+  padding-top: 61px;
+}
+
+.navbar .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-logo__name {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-left: 10px;
+  color: #010101;
+}
+
+.navbar .navbar-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar .navbar-navigation__item {
+  margin-left: 72px;
+}
+
+.navbar .navbar-navigation__item:first-child {
+  margin-left: 0;
+}
+
+.navbar .navbar-navigation__link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #010101;
+  font-weight: 700;
+}
+
+.content {
+  padding-top: 161px;
+}
+/*# sourceMappingURL=main.css.map */
