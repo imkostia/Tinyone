@@ -15,12 +15,117 @@ body {
   height: 43px;
 }
 
+.logo-icon-yellow {
+  background-image: url(../img/fingerprint-yellow.png);
+  width: 43px;
+  height: 43px;
+}
+
+.apple {
+  background-image: url(../img/platforms/icon-fa-apple.png);
+}
+
+.android {
+  background-image: url(../img/platforms/icon-fa-android.png);
+}
+
+.windows {
+  background-image: url(../img/platforms/icon-fa-windows.png);
+}
+
 .header {
   background-color: #fcdb00;
   height: 100vh;
 }
 
-.header-platforms {
+.container {
+  padding-top: 61px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__name {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-left: 10px;
+  color: #010101;
+}
+
+.navbar-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar-navigation__item {
+  margin-left: 72px;
+}
+
+.navbar-navigation__item:first-child {
+  margin-left: 0;
+}
+
+.navbar-navigation__link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #010101;
+  font-weight: 700;
+}
+
+.content .nav-icon_active {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.content .inactive {
+  opacity: 0.2;
+}
+
+.content .content-slider-navigation {
+  margin-top: 44px;
+}
+
+.content .content-slider-navigation__item {
+  margin-left: 7px;
+}
+
+.content .content-slider-navigation__item:first-child {
+  margin-left: 0;
+}
+
+.content-platforms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,34 +144,22 @@ body {
   list-style: none;
 }
 
-.header-platforms__item {
+.content-platforms__item {
   width: 33px;
   height: 40px;
   margin-left: 38px;
   margin-top: 40px;
 }
 
-.header-platforms__item:first-child {
+.content-platforms__item:first-child {
   margin-left: 0;
 }
 
-.header .apple {
-  background-image: url(../img/platforms/icon-fa-apple.png);
+.content-information {
+  padding-top: 161px;
 }
 
-.header .android {
-  background-image: url(../img/platforms/icon-fa-android.png);
-}
-
-.header .windows {
-  background-image: url(../img/platforms/icon-fa-windows.png);
-}
-
-.container {
-  padding-top: 61px;
-}
-
-.navbar .navbar-logo {
+.content-tablet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,24 +167,36 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: flex;
           flex-direction: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 68px;
+  padding-right: 40px;
 }
 
-.navbar .navbar-logo__name {
-  font-family: "PT Sans";
-  font-size: 30px;
+.content-title {
+  font-size: 32px;
   font-weight: 700;
-  line-height: 43px;
-  margin-left: 10px;
   color: #010101;
 }
 
-.navbar .navbar-navigation {
+.content-description {
+  color: #313841;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.content-subDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.content-slider-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,25 +213,38 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
 }
 
-.navbar .navbar-navigation__item {
-  margin-left: 72px;
+.content .tablet {
+  width: 316px;
+  height: 470px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 44px 14px;
 }
 
-.navbar .navbar-navigation__item:first-child {
-  margin-left: 0;
-}
-
-.navbar .navbar-navigation__link {
-  text-decoration: none;
-  font-size: 22px;
-  color: #010101;
+.content .tablet .logo__name {
+  color: #fcdb00;
+  font-size: 30px;
   font-weight: 700;
 }
 
-.content {
-  padding-top: 161px;
+.content .tablet-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #010101;
 }
 /*# sourceMappingURL=main.css.map */
