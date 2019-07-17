@@ -1,0 +1,110 @@
+.facebook {
+    background-image: url(../img/social/facebook_ico.png);
+}
+
+.google {
+    background-image: url(../img/social/google_+_ico.png);
+}
+
+.pinterest {
+    background-image: url(../img/social/pinterest_ico.png);
+}
+
+.twitter {
+    background-image: url(../img/social/twitter_ico.png);
+}
+
+.futter {
+    background-color: #010101;
+    height: 100vh;
+}
+
+.futter-title {
+    @include flex-view(column, center, center);
+    padding-top: 96px;
+    &__name {
+        color: #fcdb00;
+        font-size: 32px;
+        font-weight: 700;   
+        line-height: 32px;
+    }
+    &__description {
+        padding-top: 17px;
+        text-align: center;
+        color: #898989;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.input-component {
+    padding-top: 46px;
+    @include flex-view(row, center, center);
+}
+
+.input-component__field {
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    min-width: 315px;
+    width: 50%;
+    border: 2px solid #010101;
+    padding: 0 10px;
+}
+
+.input-component__btn {
+    margin-left: 21px;
+    width: 126px;
+    height: 50px;
+    border: 2px solid #010101;
+    background-color: #fcdb00;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    &:hover {
+        background-color: #d1c15c;
+    }
+}
+
+.futter-information {
+    @include flex-view(row, center, flex-start);
+    padding: 134px 15% 0;
+}
+
+.futter-information__item {
+    @include list-style();
+    margin-left: 100px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.futter-information__link {
+    padding-top: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    transition: all 0.2s;
+    &:hover {
+        color: #ffffff94;
+    }
+}
+.futter-social {
+    @include flex-view(row, center, center);
+    @include list-style();
+    padding-top: 79px;
+}
+.futter-social__item {
+    height: 36px;
+    width: 36px;
+    margin-left: 31px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
