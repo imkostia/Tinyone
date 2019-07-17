@@ -20,49 +20,51 @@
         line-height: 24px;
     }
     &-items {
-        padding-left: 19%;
         @include flex-view(row, center, center);
         flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
     }
     &-item {
-        margin-top: 88px;
+        padding-top: 88px;
+        padding-left: 70px;
         position: relative;
         width: 33%;
         &:first-child:before {
             content: url(../img/advantages/icon-font-1.png);
             position: absolute;
-            top: 0px;
-            left: -67px;
+            top: 88px;
+            left: 1px;
         }
         &:nth-child(2):before {
             content: url(../img/advantages/icon-font-31.png);
             position: absolute;
-            top: 0px;
-            left: -73px;
+            top: 88px;
+            left: 0px;
         }
         &:nth-child(3):before {
             content: url(../img/advantages/icon-font-21.png);
             position: absolute;
-            top: 0px;
-            left: -71px;
+            top: 88px;
+            left: 1px;
         }
         &:nth-child(4):before {
             content: url(../img/advantages/icon-font-4.png);
             position: absolute;
-            top: 0px;
-            left: -77px;
+            top: 88px;
+            left: 0px;
         }
         &:nth-child(5):before {
             content: url(../img/advantages/icon-font-3.png);
             position: absolute;
-            top: 0px;
-            left: -76px;
+            top: 88px;
+            left: 0px;
         }
         &:nth-child(6):before {
             content: url(../img/advantages/icon-font-2.png);
             position: absolute;
-            top: 0px;
-            left: -66px;
+            top: 88px;
+            left: 1px;
         }
     }
     &-item__title {

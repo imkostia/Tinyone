@@ -296,7 +296,6 @@ body {
 }
 
 .advantages-items {
-  padding-left: 19%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,10 +311,13 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .advantages-item {
-  margin-top: 88px;
+  padding-top: 88px;
+  padding-left: 70px;
   position: relative;
   width: 33%;
 }
@@ -323,43 +325,43 @@ body {
 .advantages-item:first-child:before {
   content: url(../img/advantages/icon-font-1.png);
   position: absolute;
-  top: 0px;
-  left: -67px;
+  top: 88px;
+  left: 1px;
 }
 
 .advantages-item:nth-child(2):before {
   content: url(../img/advantages/icon-font-31.png);
   position: absolute;
-  top: 0px;
-  left: -73px;
+  top: 88px;
+  left: 0px;
 }
 
 .advantages-item:nth-child(3):before {
   content: url(../img/advantages/icon-font-21.png);
   position: absolute;
-  top: 0px;
-  left: -71px;
+  top: 88px;
+  left: 1px;
 }
 
 .advantages-item:nth-child(4):before {
   content: url(../img/advantages/icon-font-4.png);
   position: absolute;
-  top: 0px;
-  left: -77px;
+  top: 88px;
+  left: 0px;
 }
 
 .advantages-item:nth-child(5):before {
   content: url(../img/advantages/icon-font-3.png);
   position: absolute;
-  top: 0px;
-  left: -76px;
+  top: 88px;
+  left: 0px;
 }
 
 .advantages-item:nth-child(6):before {
   content: url(../img/advantages/icon-font-2.png);
   position: absolute;
-  top: 0px;
-  left: -66px;
+  top: 88px;
+  left: 1px;
 }
 
 .advantages-item__title {
@@ -479,6 +481,7 @@ body {
 }
 
 .futter-information {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,24 +489,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 134px 15% 0;
+  width: 70%;
+  padding-top: 134px;
 }
 
 .futter-information__item {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 100px;
-}
-
-.futter-information__item:first-child {
-  margin-left: 0;
 }
 
 .futter-information__link {

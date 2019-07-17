@@ -72,16 +72,14 @@
 }
 
 .futter-information {
-    @include flex-view(row, center, flex-start);
-    padding: 134px 15% 0;
+    margin: 0 auto;
+    @include flex-view(row, space-between, flex-start);
+    width: 70%;
+    padding-top: 134px;
 }
 
 .futter-information__item {
     @include list-style();
-    margin-left: 100px;
-    &:first-child {
-        margin-left: 0;
-    }
 }
 
 .futter-information__link {
