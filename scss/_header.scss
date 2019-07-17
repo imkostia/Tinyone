@@ -70,6 +70,7 @@
     }
 }
 .content {
+    @include flex-view(row, space-between, center);
     .nav-icon_active {
         width: 14px;
         height: 14px;
