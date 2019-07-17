@@ -1,0 +1,81 @@
+.advantages {
+    background-color: #ffffff;
+    height: 100vh;
+    &-title {
+        @include flex-view(column, center, center);
+    }
+    &-name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #010101;
+        padding-top: 118px;
+        padding-bottom: 17px;
+    }
+    &-description {
+        text-align: center;
+        color: #313841;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &-items {
+        padding-left: 19%;
+        @include flex-view(row, center, center);
+        flex-wrap: wrap;
+    }
+    &-item {
+        margin-top: 88px;
+        position: relative;
+        width: 33%;
+        &:first-child:before {
+            content: url(../img/advantages/icon-font-1.png);
+            position: absolute;
+            top: 0px;
+            left: -67px;
+        }
+        &:nth-child(2):before {
+            content: url(../img/advantages/icon-font-31.png);
+            position: absolute;
+            top: 0px;
+            left: -73px;
+        }
+        &:nth-child(3):before {
+            content: url(../img/advantages/icon-font-21.png);
+            position: absolute;
+            top: 0px;
+            left: -71px;
+        }
+        &:nth-child(4):before {
+            content: url(../img/advantages/icon-font-4.png);
+            position: absolute;
+            top: 0px;
+            left: -77px;
+        }
+        &:nth-child(5):before {
+            content: url(../img/advantages/icon-font-3.png);
+            position: absolute;
+            top: 0px;
+            left: -76px;
+        }
+        &:nth-child(6):before {
+            content: url(../img/advantages/icon-font-2.png);
+            position: absolute;
+            top: 0px;
+            left: -66px;
+        }
+    }
+    &-item__title {
+        color: #010101;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    &-item__description {
+        color: #898989;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
