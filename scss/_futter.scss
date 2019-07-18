@@ -79,10 +79,12 @@
     @include flex-view(row, space-between, flex-start);
     width: 70%;
     padding-top: 134px;
+    flex-wrap: wrap;
 }
 
 .futter-information__item {
     @include list-style();
+    padding: 15px 15px 0 15px;
 }
 
 .futter-information__link {
@@ -113,5 +115,43 @@
     }
     &:first-child {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 1148px) { 
+    .futter-information {
+        width: 90%;
+    }
+}
+
+@media (max-width: 940px) { 
+    .futter {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .futter-title__description {
+        padding: 17px 5%;
+    }
+}
+@media (max-width: 715px) { 
+    .futter {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .input-component{
+        @include flex-view(column, center, center);
+    }
+    .input-component__btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .input-component__field {
+        width: 90%;
+    }
+    .futter-information:first-child {
+        display: block;
+        color: red;
     }
 }
