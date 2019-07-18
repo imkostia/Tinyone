@@ -65,9 +65,12 @@
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
-    transition: background-color .2s;
+    transition: all .2s;
+    cursor: pointer;
     &:hover {
-        background-color: #d1c15c;
+        background-color: #ffdd004d;
+        color: #ffffff;
+        text-shadow: 0px 0px 15px #010101;;
     }
 }
 
@@ -89,8 +92,9 @@
     font-weight: 400;
     line-height: 20px;
     transition: all 0.2s;
+    cursor: pointer;
     &:hover {
-        color: #ffffff94;
+        opacity: 0.3;
     }
 }
 .futter-social {
@@ -99,9 +103,14 @@
     padding-top: 79px;
 }
 .futter-social__item {
+    cursor: pointer;
     height: 36px;
     width: 36px;
     margin-left: 31px;
+    transition: all 0.2s;
+    &:hover {
+        opacity: 0.3;
+    }
     &:first-child {
         margin-left: 0;
     }
