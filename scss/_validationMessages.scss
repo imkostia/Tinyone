@@ -1,0 +1,19 @@
+.success-msg,
+.error-msg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}

@@ -10,6 +10,27 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+.success-msg,
+.error-msg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
 .logo-icon {
   background-image: url(../img/fingerprint.png);
   width: 43px;
@@ -556,7 +577,7 @@ body {
   width: 200px;
 }
 
-@media (max-width: 1148px) {
+@media (max-width: 1200px) {
   .advantages-items {
     width: 90%;
   }
@@ -635,7 +656,10 @@ body {
 }
 
 .input-component {
+  position: relative;
   padding-top: 46px;
+  width: 70%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,9 +667,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -656,7 +680,7 @@ body {
   border-radius: 5px;
   outline: none;
   min-width: 315px;
-  width: 50%;
+  width: 100%;
   border: 2px solid #010101;
   padding: 0 10px;
 }
@@ -801,13 +825,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 90%;
   }
   .input-component__btn {
     margin-left: 0;
     margin-top: 10px;
   }
   .input-component__field {
-    width: 90%;
+    width: 100%;
   }
   .futter-information:first-child {
     display: block;

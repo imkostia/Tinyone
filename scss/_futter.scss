@@ -39,8 +39,11 @@
 }
 
 .input-component {
+    position: relative;
     padding-top: 46px;
-    @include flex-view(row, center, center);
+    width: 70%;
+    margin: 0 auto;
+    @include flex-view(row, space-between, center);
 }
 
 .input-component__field {
@@ -48,7 +51,7 @@
     border-radius: 5px;
     outline: none;
     min-width: 315px;
-    width: 50%;
+    width: 100%;
     border: 2px solid #010101;
     padding: 0 10px;
 }
@@ -142,13 +145,14 @@
 @media (max-width: 600px) { 
     .input-component{
         @include flex-view(column, center, center);
+        width: 90%;
     }
     .input-component__btn {
         margin-left: 0;
         margin-top: 10px;
     }
     .input-component__field {
-        width: 90%;
+        width: 100%;
     }
     .futter-information:first-child {
         display: block;
