@@ -495,20 +495,6 @@ body {
 }
 
 .advantages-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 70%;
   margin: 0 auto;
 }
@@ -519,42 +505,46 @@ body {
   position: relative;
 }
 
-.advantages-item:first-child:before {
+.advantages-item:last-child {
+  width: 300px;
+}
+
+.row-1 .advantages-item:first-child:before {
   content: url(../img/advantages/icon-font-1.png);
   position: absolute;
   top: 88px;
   left: 1px;
 }
 
-.advantages-item:nth-child(2):before {
+.row-1 .advantages-item:nth-child(2):before {
   content: url(../img/advantages/icon-font-31.png);
   position: absolute;
   top: 88px;
   left: 0px;
 }
 
-.advantages-item:nth-child(3):before {
+.row-1 .advantages-item:nth-child(3):before {
   content: url(../img/advantages/icon-font-21.png);
   position: absolute;
   top: 88px;
   left: 1px;
 }
 
-.advantages-item:nth-child(4):before {
+.row-2 .advantages-item:nth-child(1):before {
   content: url(../img/advantages/icon-font-4.png);
   position: absolute;
   top: 88px;
   left: 0px;
 }
 
-.advantages-item:nth-child(5):before {
+.row-2 .advantages-item:nth-child(2):before {
   content: url(../img/advantages/icon-font-3.png);
   position: absolute;
   top: 88px;
   left: 0px;
 }
 
-.advantages-item:nth-child(6):before {
+.row-2 .advantages-item:nth-child(3):before {
   content: url(../img/advantages/icon-font-2.png);
   position: absolute;
   top: 88px;

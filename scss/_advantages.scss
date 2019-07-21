@@ -23,8 +23,6 @@
         line-height: 24px;
     }
     &-items {
-        @include flex-view(row, space-around, center);
-        flex-wrap: wrap;
         width: 70%;
         margin: 0 auto;
     }
@@ -32,37 +30,40 @@
         padding-top: 88px;
         padding-left: 70px;
         position: relative;
-        &:first-child:before {
+        &:last-child {
+            width: 300px;
+        }
+        .row-1 &:first-child:before {
             content: url(../img/advantages/icon-font-1.png);
             position: absolute;
             top: 88px;
             left: 1px;
         }
-        &:nth-child(2):before {
+        .row-1 &:nth-child(2):before {
             content: url(../img/advantages/icon-font-31.png);
             position: absolute;
             top: 88px;
             left: 0px;
         }
-        &:nth-child(3):before {
+        .row-1 &:nth-child(3):before {
             content: url(../img/advantages/icon-font-21.png);
             position: absolute;
             top: 88px;
             left: 1px;
         }
-        &:nth-child(4):before {
+        .row-2 &:nth-child(1):before {
             content: url(../img/advantages/icon-font-4.png);
             position: absolute;
             top: 88px;
             left: 0px;
         }
-        &:nth-child(5):before {
+        .row-2 &:nth-child(2):before {
             content: url(../img/advantages/icon-font-3.png);
             position: absolute;
             top: 88px;
             left: 0px;
         }
-        &:nth-child(6):before {
+        .row-2 &:nth-child(3):before {
             content: url(../img/advantages/icon-font-2.png);
             position: absolute;
             top: 88px;
