@@ -2,6 +2,18 @@ window.onload = function(){
     document.querySelector('.input-component__btn').addEventListener('click', function(){
         if(validMail(document.querySelector('.input-component__field').value)){
             showAlert('Success, check your Email, please!', 'success');
+            console.log('btn is clicked')
+            var template_params = {
+                "reply_to": "reply_to_value",
+                "from_name": "Kostia",
+                "to_name": "My Friend",
+                "message_html": "Have a good day =)",
+                "email": document.querySelector('.input-component__field').value
+            }
+            var service_id = "default_service";
+            var template_id = "template_SevYsKfk";
+            emailjs.send(service_id, template_id, template_params);
+            
             document.querySelector('.input-component__field').value = '';
         }   else {
             showAlert('Error, invalid email!', 'error');
